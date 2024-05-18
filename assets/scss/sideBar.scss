@@ -1,0 +1,83 @@
+@import "variables.scss";
+// BAR DE COTÉ
+.sideBar{
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    color: $secondary;
+
+}
+
+//LOGO
+.logo img{
+    max-width: 180px;
+    width: 100%;
+}
+
+//TOUT LES MENUS
+
+//SECTION
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    // LIST
+        .menu ul{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            list-style-type: none;
+            gap: 16px;
+        }
+
+        .menu ul li{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        .menu ul li:hover{
+            .lineSelector{
+                position: absolute;
+                left: -2.5rem;
+                border-left: solid 1px $mainColor;
+                height: 20px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+
+        .menu ul li a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            text-decoration: none;
+            color: $secondary;
+        }
+
+        .menu ul li a:hover{
+            color: $mainColor;
+            
+
+        }
+
+
+        .menu ul li a p{
+            padding: 0;
+            margin: 0;
+        }
+
+

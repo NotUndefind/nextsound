@@ -1,0 +1,77 @@
+@import "variables.scss";
+// CONTENU PRINCIPAL
+
+   //HEADER
+   .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px 0 0;
+   }
+
+        //RECHERCHE  
+        .reSearch{
+        background-color: #1D1F1F;
+        max-width: 50%;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        }
+
+        .reSearch input{
+        background-color: #1D1F1F;
+        color: white;
+        border: none;
+        outline: none;
+        text-align: left;
+        padding: 16px 0;
+        border-radius: 12px;
+        width: 100%;
+        }
+
+        .reSearch img{
+        margin: 0 10px
+        }
+
+        //SPACE BETWEEN HEADER
+        //cette div est la pour permettre au space between de separer 
+        //la barre de recherche et le reste
+        .diverSpaceBetween{
+        display: flex;
+        gap: 20px;
+        }
+
+        //CTA TÉLÉCHARGER L'APP
+        .ctaDownlaod a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        background-color: $mainColor;
+        border-radius: 12px;
+        border: none;
+        text-decoration: none;
+        color: #000000;
+        gap: 7px;
+        transition: 300ms;
+        }
+
+        .ctaDownlaod a:hover{
+         transition: 300ms;
+         background-color: white;
+        }
+
+        //PROFILE
+        .profile a img{
+        border: solid 1px $mainColor;
+        padding: 3px;
+        border-radius: 50%;
+        }
+        
+
+    

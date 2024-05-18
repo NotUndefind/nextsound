@@ -1,0 +1,133 @@
+@import "variables.scss";
+
+//MAIN
+.playlistInProgress{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+//HEADER PLAYER SONG
+    .playlistInProgress .navBar{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .playlistInProgress .gridPopUp .navBar a{
+        padding: 20px 0;
+        text-decoration: none;
+        color: $secondary;
+    }
+
+    .playlistInProgress .gridPopUp .navBar a:hover{
+        color: $mainColor;
+        border-top: solid 1px $mainColor;
+    }
+
+//TITRE LISTER
+    .playlistSongs .song{
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: 30px 3fr 3fr 1fr 1fr;
+        align-items: center;
+        margin: 20px 0;
+        color: $secondary;
+        position: relative;
+        gap: 10px;
+    }
+
+    .playlistSongs .song input{
+        position: absolute;
+        border: none;
+        padding: 5px 15px;
+        background-color: transparent;
+    }
+
+
+
+    .playlistSongs .song .songTitle{
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .playlistSongs .song .songButtons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+//SONG ACTUELLE
+    .songPlayer{
+        padding: 0 20px;
+        background-color: #1D1F1F;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .songPlayerGrid{
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .songPlayerPicture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .songPlayerPicture img{
+        border: solid 1px $mainColor;
+        border-radius: 8px;
+    }
+
+    .songPlayerButtons{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .songPlayerButtons input{
+        position: absolute;
+        border: none;
+        padding: 7px 15px;
+        opacity: 0;
+    }
+
+
+    .songPlayerName{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .songPlayerName .separator{
+        border: solid $secondary 1px;
+        height: 20px;
+    }
+
+    .songPlayerName .artistName{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .songPlayerTime{
+        display: flex;
+        align-items: center;
+    }
+
+    .songTimeline{
+        vertical-align: center;
+        width: 93%;
+        border: solid 1px $secondary;
+    }

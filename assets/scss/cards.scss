@@ -1,0 +1,74 @@
+@import "variables.scss";
+//CARTE PROMOTIONNEL
+.cards{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+
+}
+
+//CARTE PROMOTIONNEL
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 200px;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    padding: 24px;
+    background: $lineargradiant;
+    max-width: 600px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card p{
+    color: #91A2A4;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card a p{
+    color: black;
+}
+
+.cta a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: $mainColor;
+    border-radius: 10px;
+    max-width: max-content;
+    padding: 0 10px;
+    transition: 300ms;
+}
+
+.cta a:hover{
+    transition: 300ms;
+    background-color: white;
+}
+
+
+    //PREMIERE CARTE PREMUIM
+
+        .premium{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .premium .text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card .imgClone img{
+            max-width: max-content;
+            width: 100%;
+        }
+    

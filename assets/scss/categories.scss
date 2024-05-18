@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.categories{
+    margin-bottom: 40px;
+}
+
+.containerCategories {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categories .containerCategories .categorie input{
+    color: $secondary;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    background-color: black;
+    border: solid 1px $secondary;
+    padding: 10px;
+    transition: 300ms;
+}
+
+.categories .containerCategories .categorie input:hover{
+    transition: 300ms;
+    background-color: $mainColor;
+    color: black;
+    border-color: $mainColor;
+}
