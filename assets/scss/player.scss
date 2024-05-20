@@ -6,6 +6,12 @@
     grid-template-columns: 80% 20%;
 }
 
+@media screen and (max-width : 900px){
+    .playlistInProgress{
+        grid-template-columns: 1fr;
+    }
+}
+
 //HEADER PLAYER SONG
     .playlistInProgress .navBar{
         display: flex;

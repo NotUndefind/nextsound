@@ -231,6 +231,11 @@
   grid-template-columns: 80% 20%;
 }
 
+@media screen and (max-width: 900px) {
+  .playlistInProgress {
+    grid-template-columns: 1fr;
+  }
+}
 .playlistInProgress .navBar {
   display: flex;
   flex-direction: row;
@@ -351,6 +356,11 @@
   border: solid 1px #666C6C;
 }
 
+@media screen and (max-width: 900px) {
+  .popUp {
+    visibility: hidden;
+  }
+}
 .popUp {
   color: black;
   text-align: center;
@@ -360,22 +370,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
-  gap: 32px;
+  padding: 1.5rem;
+  gap: 2rem;
 }
 
 .popUp .popUpIcon img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .popUp .popUpCTA a {
   text-decoration: none;
   color: white;
   background-color: black;
-  border-radius: 15px;
-  padding: 16px;
+  border-radius: 1rem;
+  padding: 1rem;
   transition: 300ms;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .popUp .popUpCTA a:hover {
