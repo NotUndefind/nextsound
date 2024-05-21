@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   padding: 2.5rem 2.5rem 0 2.5rem;
+  min-width: 7rem;
   color: #666C6C;
 }
 
@@ -352,6 +353,7 @@
 
 .songTimeline {
   vertical-align: center;
+  width: 100%;
   border: solid 1px #666C6C;
 }
 
